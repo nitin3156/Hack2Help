@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<android.support.v7.widget.CardView
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:elevation="3dp"
+    card:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cropimage"
+            android:layout_width="140dp"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/croptype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cropimage"
+            android:text="Wheat"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cropimage"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:text="Quantity:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/msp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Rs. 40000"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/center1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cropimage"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Center:" />
+
+        <TextView
+            android:id="@+id/centerid"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:layout_below="@+id/center1"
+            android:layout_toEndOf="@+id/cropimage" />
+        <TextView
+            android:id="@+id/comid"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:layout_below="@+id/center1"
+            android:layout_toEndOf="@+id/cropimage" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>
